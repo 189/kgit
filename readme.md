@@ -1,4 +1,6 @@
 
+A Simple & graceful git tool libary.
+
 ### Install
 
 ```
