@@ -1,0 +1,19 @@
+{
+  "name": "kgit",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc -w",
+    "test": "tsc && node lib/test.js"
+  },
+  "files": [
+      "lib"
+  ],
+  "license": "MIT",
+  "author": "kv.wang87@gmail.com",
+  "dependencies": {
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.2"
+  },
+  "typings": "lib/index.d.ts"
+}
