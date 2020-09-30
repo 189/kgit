@@ -11,8 +11,19 @@
     "lib",
     "src"
   ],
+  "keywords": [
+    "git"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/189/kgit"
+  },
+  "bugs": {
+    "url": "https://github.com/189/kgit/issue"
+  },
+  "homepage": "https://github.com/189/kgit",
   "license": "MIT",
-  "author": "kv.wang87@gmail.com",
+  "author": "189<kv.wang87@gmail.com>",
   "dependencies": {
     "tslint": "^6.0.0",
     "typescript": "^3.8.2"
