@@ -2,7 +2,7 @@
   "name": "kgit",
   "description": "",
   "main": "lib/index.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "build": "tsc -w",
     "test": "tsc && node lib/test.js"
