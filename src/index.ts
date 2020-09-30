@@ -60,9 +60,6 @@ const checkIsPushSuccess = async function (repoDirPath: string) {
 	return localRev === remoteRev;
 };
 
-
-
-
 export const clearGitRepo = async function (repoDirPath: string, toPoint: number = 1) {
 	await resetHard(repoDirPath, toPoint ? "HEAD~" + toPoint : "HEAD");
 	await cleanCurrentBranch(repoDirPath);
@@ -119,13 +116,15 @@ export const status = async function (repoDirPath: string) {
  */
 export const transferStatus = async function (repoDirPath: string) {
 	const results = await status(repoDirPath), ret: Source = {};
-
-	results.length && results.forEach(function (result: string) {
-		const [mark, file] = result.trim().replace(/\s+/g, " ").split(" ");
-		ret[mark] = ret[mark] || [];
-		ret[mark].push(file);
-	});
-	return results.length ? ret : "";
+	if (results.length) {
+		results.forEach(function (result: string) {
+			const [mark, file] = result.trim().replace(/\s+/g, " ").split(" ");
+			ret[mark] = ret[mark] || [];
+			ret[mark].push(file);
+		});
+		return ret;
+	}
+	return "";
 }
 
 /**

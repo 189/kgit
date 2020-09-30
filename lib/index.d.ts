@@ -8,7 +8,7 @@ export declare const forceChangeBranch: (repoDirPath: string, branchName: string
 export declare const resetHard: (repoDirPath: string, toPoint: string) => Promise<string>;
 export declare const cleanCurrentBranch: (repoDirPath: string) => Promise<string>;
 export declare const pullCurrentBranch: (repoDirPath: string) => Promise<string>;
-export declare const clearGitRepo: (repoDirPath: string) => Promise<void>;
+export declare const clearGitRepo: (repoDirPath: string, toPoint?: number) => Promise<void>;
 export declare const submitCommit: (repoDirPath: string, commitMessage: string, modifyFileChecker?: string | string[] | ModifyFileChecker | undefined) => Promise<boolean>;
 /**
  *

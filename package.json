@@ -8,7 +8,8 @@
     "test": "tsc && node lib/test.js"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "license": "MIT",
   "author": "kv.wang87@gmail.com",
